@@ -270,43 +270,42 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
 /*.single-about-txt*/
 
-/*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
-.single-about-img
-{
+.single-about-img {
+    position: relative;
+    box-shadow: 0 5px 20px rgba(14, 25, 80, .30);
+    width: 556px; /* Largeur de l'image */
+    height: 592px; /* Hauteur de l'image */
+}
+
+.single-about-img:before {
     position: absolute;
     content: " ";
     top: 0;
     left: 0;
-    width: 109%;
+    width: 100%;
     height: 100%;
-    background: rgba(31,44,108,.3);
-}
-.single-about-img img {
-    max-width: 500px;
-    height: 468px;
+    background: rgba(31, 44, 108, .3);
 }
 
-.about-list-icon{
+.single-about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-list-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    width: 556px; /* Largeur de la bannière égale à celle de l'image */
     height: 90px;
     background: #1f2c6c;
+    margin-top: 20px; /* Espace entre l'image et la bannière */
 }
-/*.ab-list-icon */
+
 .about-list-icon ul {
     display: flex;
 }
-.about-list-icon  ul li a {
-    padding-right: 22px;
-    cursor:pointer;
-    color: #fff;
-}
+
 .about-list-icon ul li a {
     cursor: pointer;
     color: #fff;
@@ -319,9 +318,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     line-height: 28px;
     text-align: center;
 }
+
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
+
 /*.ab-list-icon */
 
 /*.single-about-img */
