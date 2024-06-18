@@ -273,8 +273,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-img {
     position: relative;
     box-shadow: 0 5px 20px rgba(14, 25, 80, .30);
-    width: 652px; /* Ajustez cette valeur pour augmenter la largeur du cadre */
-    height: 627px; /* Ajustez cette valeur pour augmenter la hauteur du cadre */
+    width: 627px; /* Ajustez cette valeur pour augmenter la largeur du cadre */
+    height: 652px; /* Ajustez cette valeur pour augmenter la hauteur du cadre */
 }
 
 .single-about-img:before {
