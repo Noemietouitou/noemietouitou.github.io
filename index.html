@@ -51,8 +51,8 @@
         <![endif]-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>QR Code Popup</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 	</head>
@@ -165,28 +165,33 @@
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="#" id="whatsapp-icon">
-												<i class="fa fa-whatsapp" aria-hidden="true"></i>
-											</a>
+											<div class="icon-container">
+												<a href="#" id="whatsapp-icon">
+													<i class="fa fa-whatsapp" aria-hidden="true"></i>
+												</a>
+												<div class="qr-code-bubble" id="qr-code-bubble">
+													<img src="./assets/images/about/WHATSAPP.jpeg" alt="WhatsApp QR Code">
+												</div>
+											</div>
 										</li><!-- / li -->
 									</ul><!-- / ul -->
-									<div class="qr-code-container" id="qr-code-container">
-										<img src="./assets/images/about/WHATAPP.png" alt="WhatsApp QR Code">
-									</div>
 
 									<script>
 										document.getElementById('whatsapp-icon').addEventListener('click', function(event) {
 											event.preventDefault();
-											var qrCodeContainer = document.getElementById('qr-code-container');
-											qrCodeContainer.style.display = (qrCodeContainer.style.display === 'block') ? 'none' : 'block';
+											var qrCodeBubble = document.getElementById('qr-code-bubble');
+											console.log("Icône WhatsApp cliquée"); // Journal de débogage
+											qrCodeBubble.style.display = (qrCodeBubble.style.display === 'block') ? 'none' : 'block';
+											console.log("Affichage de la bulle QR Code : ", qrCodeBubble.style.display); // Journal de débogage
 										});
 
-										// Close the QR code when clicking outside of it
+										// Fermer la bulle QR code lorsqu'on clique à l'extérieur
 										document.addEventListener('click', function(event) {
-											var qrCodeContainer = document.getElementById('qr-code-container');
+											var qrCodeBubble = document.getElementById('qr-code-bubble');
 											var whatsappIcon = document.getElementById('whatsapp-icon');
-											if (!qrCodeContainer.contains(event.target) && event.target !== whatsappIcon) {
-												qrCodeContainer.style.display = 'none';
+											if (!qrCodeBubble.contains(event.target) && event.target !== whatsappIcon) {
+												qrCodeBubble.style.display = 'none';
+												console.log("Clic à l'extérieur, bulle QR Code cachée"); // Journal de débogage
 											}
 										});
 									</script>
