@@ -879,3 +879,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position: relative;
     display: inline-block;
 }
+
+.flaticon-linkedin:before { content: "\e800"; }
+.flaticon-whatsapp:before { content: "\e801"; }
