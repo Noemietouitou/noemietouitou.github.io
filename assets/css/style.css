@@ -882,3 +882,41 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 .flaticon-linkedin:before { content: "\e800"; }
 .flaticon-whatsapp:before { content: "\e801"; }
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.diplomas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.diploma {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diploma img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.diploma p {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
