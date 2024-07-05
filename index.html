@@ -86,7 +86,7 @@
 			                    <li class="smooth-menu"><a href="#skills">compétences</a></li>
 			                    <li class="smooth-menu"><a href="#experience">parcours</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">profil</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+			                    <li class="smooth-menu"><a href="#portfolio">portfolio & STAGES</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
@@ -154,12 +154,12 @@
 								<div class="about-list-icon">
 									<ul>
 										<li>
-											<a href="https://www.linkedin.com/in/noemie-touitou-538795316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+											<a href="https://www.linkedin.com/in/noemie-touitou-538795316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" id="linkedin-icon">
 												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="https://github.com/noemietouitou">
+											<a href="https://github.com/noemietouitou" id="github-icon">
 												<i  class="fa fa-github" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
@@ -168,36 +168,11 @@
 												<a href="https://wa.me/651611171" id="whatsapp-icon">
 													<i class="fa fa-whatsapp" aria-hidden="true"></i>
 												</a>
-												<div class="qr-code-bubble" id="qr-code-bubble">
-													<img src="./assets/images/about/WHATSAPP.jpeg" alt="WhatsApp QR Code">
-												</div>
 											</div>
 										</li><!-- / li -->
 									</ul><!-- / ul -->
-
-									<script>
-										document.getElementById('whatsapp-icon').addEventListener('click', function(event) {
-											event.preventDefault();
-											var qrCodeBubble = document.getElementById('qr-code-bubble');
-											console.log("Icône WhatsApp cliquée"); // Journal de débogage
-											qrCodeBubble.style.display = (qrCodeBubble.style.display === 'block') ? 'none' : 'block';
-											console.log("Affichage de la bulle QR Code : ", qrCodeBubble.style.display); // Journal de débogage
-										});
-
-										// Fermer la bulle QR code lorsqu'on clique à l'extérieur
-										document.addEventListener('click', function(event) {
-											var qrCodeBubble = document.getElementById('qr-code-bubble');
-											var whatsappIcon = document.getElementById('whatsapp-icon');
-											if (!qrCodeBubble.contains(event.target) && event.target !== whatsappIcon) {
-												qrCodeBubble.style.display = 'none';
-												console.log("Clic à l'extérieur, bulle QR Code cachée"); // Journal de débogage
-											}
-										});
-									</script>
 								</div><!-- /.about-list-icon -->
-
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -432,12 +407,21 @@
 										<div class="single-progress-txt">
 											<div class="progress ">
 											   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
-												    
 											   </div>
 											</div>
 											<h3>90%</h3>
 										</div>
 									</div><!-- /.barWrapper -->
+      								<div class="barWrapper">
+									<span class="progressText">css</span>
+									<div class="single-progress-txt">
+										<div class="progress ">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="95" style="">
+											</div>
+										</div>
+										<h3>90%</h3>
+									</div>
+								</div><!-- /.barWrapper -->
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -454,14 +438,14 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">css </span>
+										<span class="progressText">Appliquée </span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="10" aria-valuemax="100" style="">
+												<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="">
 
 												</div>
 											</div>
-											<h3>90%</h3>
+											<h3>95%</h3>
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
@@ -495,6 +479,16 @@
 											   </div>
 											</div>
 											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Patiente</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
+												</div>
+											</div>
+											<h3>95%</h3>
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
@@ -545,7 +539,7 @@
 														<h5>Paris, La Défense</h5>
 														<p class="description">
 															Stage de 6 semaines parmi une équipe de développeurs. Reverse engenering via DrawIO et code Python. Participation à la vie d'une équipe Agile dans un cadre international.
-															<a href="stageSG.html" ><b>RAPPORT DE STAGE </b></a>
+															<a href="stageSG.html" ><b>EN SAVOIR PLUS - NOTE DE STAGE </b></a>
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -755,7 +749,7 @@
 		<section id="portfolio" class="portfolio">
 			<div class="portfolio-details">
 				<div class="section-heading text-center">
-					<h2>portfolio</h2>
+					<h2>portfolio & STAGES</h2>
 				</div>
 				<div class="container">
 					<div class="portfolio-content">
