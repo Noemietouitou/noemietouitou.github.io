@@ -231,7 +231,23 @@
 
 <div style="margin: 20px;" class="portfolio-description" id="contexte">
     <div class="titreStage" style="height: 40px "> CONTEXTE </div>
-    <h2 style="text-decoration: underline">contexte :</h2>
+    <h2 style="text-decoration: underline">1)	L’application GARLIQ: un outil considérable pour la SOCIETE GENERALE :</h2><br><br>
+    <p>L’application GARLIQ est un outil utilisé par la SOCIETE GENERALE depuis maintenant plus de 15 ans. Depuis 5 ans, elle est gerée par Samuel Grosman, mon maître de stage.<br><br>
+        Cette application est utilisée par la direction financière de la banque. Elle constitue un outil primaire et critique pour la SOCIETE GENERALE, car elle gère les risques structurels pour le bilan économique de la banque. On parle ici de plusieurs dizaines de milliards d’euros.<br><br>
+        La direction financière s’appuie sur l’application GARLIQ pour calculer les risques financiers portés par le bilan économique de la banque, afin d’éviter et de prévoir au mieux les risques de liquidité, de taux, ainsi que les désequilibres potentiels.<br><br>
+        Le bilan de la banque est vivant et évolue constamment, notamment suite aux enjeux sociaux, politiques comme les différentes élections, sanitaires comme la pandemie de la Covid connue en 2019, ...<br><br>
+        L’application GARLIQ est donc utilisée pour réaliser des simulations d’anticipation avec des calculs effectués de manière récurrente. Ces differents calculs sont representés par des chaînes d’orchestration se trouvant sur CONTROL M et sur AIRFLOW, deux ordonnanceurs concurrents dont le sujet sera abordé par la suite.<br><br>
+        L’orchestration mise en place pour calculer les indicateurs des risques et des métriques est d’ailleurs a présenter a la Banque Centrale Europeenne (BCE).<br><br>
+        Generalement, la plupart des calculs sont realisés a intervalle regulier d’ordre mensuel. Certaines simulations se doivent de suivre une orchestration hedomadaire. En tant de crise, comme par exemple suite a la déclaration de guerre en Ukraine, les élections législatives d’actualité ou encore la crise Covid19, la macro-activité se doit d’autant plus d’etre surveillée et les calculs sont administrés quotidiennement. En effet, ces évenements ont un impact considérable sur la société et sont a l’origine de potentiels grands changements économiques.<br><br><br>
+    </p>
+    <h2 style="text-decoration: underline">2)	L’évolution actuelle de GARLIQ</h2><br><br>
+    <p>Depuis 5 ans maintenant, c’est Samuel Grosman, mon maître de stage, qui est responsable de l’application GARLIQ, en constante évolution.<br><br>
+        Les chaînes d’orchestration qui la constituent se trouvaient jusqu’ à il y a peu de temps exclusivement sur l’ordonnanceur CONTROL M. Pour répondre a des besoins d’évolutions et de modernité en forte croissante, ces chaînes doivent etre progressivement migrées sur Airflow, un ordonnanceur concurrent.<br><br>
+        CONTROL M et AIRFLOW éffectuent le même travail avec pour but commun de faire enchaîner une succession de tâches prédéfinies suivants des éxigences données. Cependant leurs caracteristiques divergentes poussent la SOCIETE GENERALE a se tourner vers AIRFLOW.<br><br>
+        CONTROL M est un ordonnanceur payant et compatible aux infrastructures legacy, tandis que AIRFLOW est “open source” tout en étant en compatibilité avec les appels d’APIs (interfaces logicielles qui permettent de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités) et à l’approche de transformations vers Cloud.<br><br>
+        La migration des chaînes d’orchestration de CONTROL M vers AIRFLOW est donc un besoin actuel de l’application GARLIQ éxigé par la SOCIETE GENERALE afin de répondre a la modernisation et au changement des systemes utilisés.<br><br><br>
+    </p>
+
 </div>
 
 
