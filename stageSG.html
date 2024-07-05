@@ -55,70 +55,106 @@
 
 
 <style>
-.container {
-    max-width: 1200px;
-    background-color: #fff;
-}
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.col-lg-4 {
-    flex: 0 0 33.3333%;
-    padding: 15px;
-}
+    .col-lg-4 {
+        flex: 0 0 50%;
+        padding: 15px;
+    }
 
-.portfolio-info {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 500px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    font-size: small;
-}
+    .col-lg-6 {
+        flex: 0 0 50%;
+        padding: 15px;
+    }
 
-.portfolio-info h3 {
-    margin-top: 3px;
-}
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
 
-.portfolio-info ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .img-col {
+        flex: 0 0 50%; /* Ensure both columns take up 50% width */
+        padding: 15px 30px; /* Adjust padding as needed */
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start; /* Align the image to the top of its container */
+    }
 
-.portfolio-info ul li {
-    margin-bottom: 10px;
-}
+    .portfolio-info {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        font-size: small;
+        width: 500px; /* Fixed width for the portfolio info */
+        margin-right: auto; /* Align to the left */
+    }
 
-.portfolio-info ul li strong {
-    display: inline-block;
-    width: 150px;
-}
+    .portfolio-info h2 {
+        margin-top: 0;
+    }
 
-.portfolio-description {
-    margin: 20px 20px 0 20px; /* Adjust margin as needed */
-    padding: 15px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
+    .portfolio-info ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.portfolio-description h2 {
-    margin-top: 0;
-    text-decoration: underline;
-}
+    .portfolio-info ul li {
+        margin-bottom: 10px;
+    }
 
-.portfolio-description p {
-    text-align: justify;
-}
+    .portfolio-info ul li strong {
+        display: inline-block;
+        width: 150px;
+    }
 
-.alinea-text {
-    text-indent: 2em;
-}
+    .portfolio-description {
+        margin: 20px 0; /* Adjust margin as needed */
+        padding: 15px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
 
+    .portfolio-description h2 {
+        margin-top: 0;
+        text-decoration: underline;
+    }
 
+    .portfolio-description p {
+        text-align: justify;
+    }
+
+    .alinea-text {
+        text-indent: 2em;
+    }
+
+    .titreStage {
+        height: 80px;
+        background-color: rgb(185, 85, 243);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -161,27 +197,32 @@
 </header><!-- /.top-area-->
 <!-- top-area End -->
 
-<div class="container" style="margin-top: 100px" >
-
+<div class="container" style="margin-top: 120px" >
+    <div class="titreStage" style="height: 80px "> STAGE AU SEIN DE LA SOCIETE GENERALE<br>  6 SEMAINES : MAI / JUIN 2024 </div>
+    <div class="row">
         <div class="col-lg-4">
             <div class="portfolio-info" >
                 <h2><u>Informations sur l'entreprise :</u></h2><br>
                 <ul>
                     <li><strong>Nom :</strong>SOCIETE GENERALE</li>
-                    <li><strong>Forme juridique :</strong>,,,</li>
-                    <li><strong>Capital :</strong>33.825.000 €</li>
-                    <li><strong>Chiffre d'affaire :</strong>,,,</li>
-                    <li><strong>Siège social :</strong>Domicilié au ,,,</li>
-                    <li><strong>Président :</strong>,,,</li>
-                    <li><strong>Domaine d'activité :</strong>Spécialisée dans le domaine des actions banquaires.</li>
+                    <li><strong>Forme juridique :</strong>Société anonyme</li>
+                    <li><strong>Capital :</strong>55,114 milliards d’€ (2022)</li>
+                    <li><strong>Chiffre d'affaire :</strong>+8,8% 28,06 milliards d’€ (2022)</li>
+                    <li><strong>Siège social :</strong>Domicilié au 29, boulevard Haussmann 75009 Paris</li>
+                    <li><strong>Direction :</strong>Slawomir Krupa (directeur général) et Lorenzo Bini Smaghi (président)</li>
+                    <li><strong>Domaine d'activité :</strong>Spécialisée dans le domaine des actions banquaires, assurance, finance, conseil et immobilier.</li>
                     <li><strong>Site internet :</strong><i class="bi bi-globe2"></i> <a href="https://www.societegenerale.com/" target="_blank">www.societegenerale.com</a></li>
                 </ul>
             </div>
         </div>
+
+    <div class="col-lg-6 img-col">
+        <img src="assets/images/societeGenerale/accueil.png" class="responsive-img" alt="Societe Generale">
     </div>
-    <div style="margin-right: 20px;margin-left: 20px" class="portfolio-description" id="entreprise">
-        <h2 style="text-decoration: underline">Domaine d'activités principales :</h2>
-        <p style="text-align: justify"> <span class="alinea-text"> ,,,</span></p>
-    </div>
+</div>
+</div>
+<div style="margin: 20px;" class="portfolio-description" id="entreprise">
+    <h2 style="text-decoration: underline">Domaine d'activités principales :</h2>
+</div>
 </body>
 </html>
