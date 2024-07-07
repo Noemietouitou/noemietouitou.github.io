@@ -231,21 +231,21 @@
 
 <div style="margin: 20px;" class="portfolio-description" id="contexte">
     <div class="titreStage" style="height: 40px "> CONTEXTE </div>
-    <h2 style="text-decoration: underline">1)	L’application GARLIQ: un outil considérable pour la SOCIETE GENERALE :</h2><br><br>
+    <h2 style="text-decoration: underline">1)	L’application GARLIQ: un outil considérable pour la SOCIETE GENERALE :</h2><br>
     <p>L’application GARLIQ est un outil utilisé par la SOCIETE GENERALE depuis maintenant plus de 15 ans. Depuis 5 ans, elle est gerée par Samuel Grosman, mon maître de stage.<br><br>
-        Cette application est utilisée par la direction financière de la banque. Elle constitue un outil primaire et critique pour la SOCIETE GENERALE, car elle gère les risques structurels pour le bilan économique de la banque. On parle ici de plusieurs dizaines de milliards d’euros.<br><br>
-        La direction financière s’appuie sur l’application GARLIQ pour calculer les risques financiers portés par le bilan économique de la banque, afin d’éviter et de prévoir au mieux les risques de liquidité, de taux, ainsi que les désequilibres potentiels.<br><br>
+        Cette application est utilisée par la direction financière de la banque. Elle constitue un outil primaire et critique pour la SOCIETE GENERALE, car elle facilite la gestion des risques structurels (ALM) pour le bilan économique de la banque. On parle ici de plusieurs dizaines de milliards d’euros.<br><br>
+        La direction financière s’appuie sur l’application GARLIQ pour calculer les risques financiers portés par le bilan économique de la banque, afin d’éviter et de prévoir au mieux les risques de liquidité, de taux, ainsi que les déséquilibres potentiels.<br><br>
         Le bilan de la banque est vivant et évolue constamment, notamment suite aux enjeux sociaux, politiques comme les différentes élections, sanitaires comme la pandemie de la Covid connue en 2019, ...<br><br>
         L’application GARLIQ est donc utilisée pour réaliser des simulations d’anticipation avec des calculs effectués de manière récurrente. Ces differents calculs sont representés par des chaînes d’orchestration se trouvant sur CONTROL M et sur AIRFLOW, deux ordonnanceurs concurrents dont le sujet sera abordé par la suite.<br><br>
-        L’orchestration mise en place pour calculer les indicateurs des risques et des métriques est d’ailleurs a présenter a la Banque Centrale Europeenne (BCE).<br><br>
-        Generalement, la plupart des calculs sont realisés a intervalle regulier d’ordre mensuel. Certaines simulations se doivent de suivre une orchestration hedomadaire. En tant de crise, comme par exemple suite a la déclaration de guerre en Ukraine, les élections législatives d’actualité ou encore la crise Covid19, la macro-activité se doit d’autant plus d’etre surveillée et les calculs sont administrés quotidiennement. En effet, ces évenements ont un impact considérable sur la société et sont a l’origine de potentiels grands changements économiques.<br><br><br>
-    </p>
-    <h2 style="text-decoration: underline">2)	L’évolution actuelle de GARLIQ</h2><br><br>
+        L’orchestration mise en place pour calculer les indicateurs des risques et des métriques est d’ailleurs à présenter a la Banque Centrale Europeenne (BCE).<br><br>
+        Generalement, la plupart des calculs sont realisés à intervalle regulier d’ordre mensuel. Certaines simulations se doivent de suivre une orchestration hedomadaire. En tant de crise, comme par exemple suite à la déclaration de guerre en Ukraine, les élections législatives d’actualité ou encore la crise Covid19, la macro-activité se doit d’autant plus d’etre surveillée et les calculs sont administrés quotidiennement. En effet, ces évenements ont un impact considérable sur la société et sont à l’origine de potentiels grands changements économiques.<br><br>
+    </p><br><br>
+    <h2 style="text-decoration: underline">2)	L’évolution actuelle de GARLIQ: </h2><br>
     <p>Depuis 5 ans maintenant, c’est Samuel Grosman, mon maître de stage, qui est responsable de l’application GARLIQ, en constante évolution.<br><br>
-        Les chaînes d’orchestration qui la constituent se trouvaient jusqu’ à il y a peu de temps exclusivement sur l’ordonnanceur CONTROL M. Pour répondre a des besoins d’évolutions et de modernité en forte croissante, ces chaînes doivent etre progressivement migrées sur Airflow, un ordonnanceur concurrent.<br><br>
-        CONTROL M et AIRFLOW éffectuent le même travail avec pour but commun de faire enchaîner une succession de tâches prédéfinies suivants des éxigences données. Cependant leurs caracteristiques divergentes poussent la SOCIETE GENERALE a se tourner vers AIRFLOW.<br><br>
-        CONTROL M est un ordonnanceur payant et compatible aux infrastructures legacy, tandis que AIRFLOW est “open source” tout en étant en compatibilité avec les appels d’APIs (interfaces logicielles qui permettent de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités) et à l’approche de transformations vers Cloud.<br><br>
-        La migration des chaînes d’orchestration de CONTROL M vers AIRFLOW est donc un besoin actuel de l’application GARLIQ éxigé par la SOCIETE GENERALE afin de répondre a la modernisation et au changement des systemes utilisés.<br><br><br>
+        Les chaînes d’orchestration qui la constituent se trouvaient jusqu’ à il y a peu de temps exclusivement sur l’ordonnanceur CONTROL M. Pour répondre à des besoins d’évolutions et de modernité en forte croissante, ces chaînes doivent etre progressivement migrées sur Airflow, un ordonnanceur concurrent.<br><br>
+        CONTROL M et AIRFLOW éffectuent le même travail avec pour but commun de faire enchaîner une succession de tâches prédéfinies suivants des éxigences données. Cependant leurs caracteristiques divergentes poussent la SOCIETE GENERALE à se tourner vers AIRFLOW.<br><br>
+        CONTROL M est un ordonnanceur payant et compatible aux infrastructures legacy, tandis que AIRFLOW est “open source” tout en étant en compatibilité avec les appels d’APIs (interfaces logicielles qui permettent de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités) et à l’approche de la transformation Cloud.<br><br>
+        La migration des chaînes d’orchestration de CONTROL M vers AIRFLOW est donc un besoin actuel de l’application GARLIQ éxigé par la SOCIETE GENERALE afin de répondre a la modernisation et au changement des systemes utilisés.<br><br>
     </p>
 
 </div>
@@ -253,7 +253,13 @@
 
 <div style="margin: 20px;" class="portfolio-description" id="mission">
     <div class="titreStage" style="height: 40px "> MA MISSION </div>
-    <h2 style="text-decoration: underline">mission</h2>
+    <h2 style="text-decoration: underline">2)	Le fonctionnement et les processus: </h2><br>
+    <p>
+        Les chaînes d’orchestration (dags) présents sur CONTROL M sont des graphs dirigés acycliques; elles sont constituées de tâches (instances d’un opérateur) reliées par des dépendances qui s’éxecutent dans un ordre précis. Les opérateurs sont soit des actions (comme la récupération d’une API et tout ce qui peut etre éxécuté en Python), des transfères (d’une API a une base de donnée) ou des sensors (attente d’un élément déclencheur pour poursuivre l’éxécution de la chaîne, par exemple l’attente de présence d’un fichier ou d’une validation humaine).<br><br>
+        Pour passer une chaîne de CONTROL M à AIRFLOW, il faut récupérer cette derniere depuis CONTROL M sous forme de fichier XML décrivant précisemment les tâches et les dépendences de la chaîne. L’exploitation du fichier XML se fera grâce à Excel en utilisant PowerQuery afin de faciliter la lecture du fichier dans un tableau. En s’appuyant également sur un Powerpoint de cette même chaîne shematisé par l’equipe GIE, il faut redessiner la chaîne complète sur DRAWIO en utilisant la librairie développée par les équipes pour GRALIQ, tout en concervant les caractéristiques spécifiques des tâches. Ce shéma DRAWIO est associé à un fichier XML qui sera traduit en 2 fichier .json : un pour les tâches et l’autre pour les dépendances. En utilisant Python, les fichiers .json seront transmis à Airflow pour basculer la chaîne finale sur le nouvel ordonnanceur.<br><br>
+        Voici un schéma global du processus décrit précedemment:<br>
+
+    </p>
 </div>
 
 
