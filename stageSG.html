@@ -253,6 +253,18 @@
 
 <div style="margin: 20px;" class="portfolio-description" id="mission">
     <div class="titreStage" style="height: 40px ;margin-top: 120px"> MA MISSION </div>
+    <h2 style="text-decoration: underline">1)    Ma présence au sein des équipes </h2><br>
+    <p>
+        Le domaine informatique dans lequel j’ai effectué mon stage est composé de 3 services:<br><br>
+       <p style="text-indent: 20px;">-	GFR (Garliq French Retail) est le domaine qui s’occupe de gérer les relations avec les directions financières des entités FR qui font de l’ALM (gestion des risques structurels); par exemple le réseau de banque de details France (issu de la fusion SOCIETE GENERALE / Credit Du Nord), Boursorama, Franfinance, ...</p><br>
+       <p style="text-indent: 20px;">-	GIE (Garliq International Entities) qui a le même rôle que GFR mais appliqué a des entités internationales telles que KB en Europe de l’est, SGMA au Maroc, SG London, SG New York ...</p><br>
+       <p style="text-indent: 20px;">-	GCC (Garliq Core Components) qui est le domaine géré par Samuel Grosman, mon maître de stage. Ce domaine est réservé aux composants core, socles et génériques pour l’application GARLIQ. Le domaine GCC est decomposé en 3 équipes (feature Teams):<p><br>
+
+        <p style="text-indent: 35px;">-	GAAS (Garliq as a service) qui développe les services WEB autour d’un composant de calcul de risques financiers.</p>
+        <p style="text-indent: 35px;">-	FR (FusionRisk) qui gère ce composant de calculs financiers ainsi que la relation avec l’éditeur Finastra.</p>
+    <p style="text-indent: 35px;">-	GOT pour Garliq Orchestration Team) qui gère l’offre de service autour de l’ordonnancement et de l’orchestration pour enchaîner les differents services de GAAS, afin de répondre à des besoins réccurents (calculs daily, weekly ou monthly) des 2 domaines GIE et GFR. <i style="color:red" >C’est dans cette équipe que m’a été attribuée une place durant mon stage.</i></p>
+    </p><br><br>
+
     <h2 style="text-decoration: underline">2)	Le fonctionnement et les processus: </h2><br>
     <p>
         Les chaînes d’orchestration (dags) présents sur CONTROL M sont des graphs dirigés acycliques; elles sont constituées de tâches (instances d’un opérateur) reliées par des dépendances qui s’éxecutent dans un ordre précis. Les opérateurs sont soit des actions (comme la récupération d’une API et tout ce qui peut etre éxécuté en Python), des transfères (d’une API a une base de donnée) ou des sensors (attente d’un élément déclencheur pour poursuivre l’éxécution de la chaîne, par exemple l’attente de présence d’un fichier ou d’une validation humaine).<br><br>
