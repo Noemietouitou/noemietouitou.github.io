@@ -257,7 +257,7 @@
     <p>
         Les chaînes d’orchestration (dags) présents sur CONTROL M sont des graphs dirigés acycliques; elles sont constituées de tâches (instances d’un opérateur) reliées par des dépendances qui s’éxecutent dans un ordre précis. Les opérateurs sont soit des actions (comme la récupération d’une API et tout ce qui peut etre éxécuté en Python), des transfères (d’une API a une base de donnée) ou des sensors (attente d’un élément déclencheur pour poursuivre l’éxécution de la chaîne, par exemple l’attente de présence d’un fichier ou d’une validation humaine).<br><br>
         Pour passer une chaîne de CONTROL M à AIRFLOW, il faut récupérer cette derniere depuis CONTROL M sous forme de fichier XML décrivant précisemment les tâches et les dépendences de la chaîne. L’exploitation du fichier XML se fera grâce à Excel en utilisant PowerQuery afin de faciliter la lecture du fichier dans un tableau. En s’appuyant également sur un Powerpoint de cette même chaîne shematisé par l’equipe GIE, il faut redessiner la chaîne complète sur DRAWIO en utilisant la librairie développée par les équipes pour GRALIQ, tout en concervant les caractéristiques spécifiques des tâches. Ce shéma DRAWIO est associé à un fichier XML qui sera traduit en 2 fichier .json : un pour les tâches et l’autre pour les dépendances. En utilisant Python, les fichiers .json seront transmis à Airflow pour basculer la chaîne finale sur le nouvel ordonnanceur.<br><br>
-        Voici un schéma global du processus décrit précedemment:<br>
+        Voici un schéma global du processus décrit précedemment:<br><img src="./assets/images/societeGenerale/shemaProcess.png" style="padding-left: 10px">
 
     </p>
 </div>
