@@ -155,6 +155,14 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    .enligne {
+        display: flex;
+        align-items: center;
+    }
+    .enligne video,
+    .enligne img {
+        margin-right: 150px; /* Ajouter de l'espace entre la vidéo et l'image */
+    }
 </style>
 </head>
 <body>
@@ -272,7 +280,52 @@
         <i style=" color:red ;font-size: medium">Ma mission consistait à redessiner un maximum de chaînes sur DRAWIO pour participer à la migration de CONTROL M vers AIRFLOW</i><br><br>
         Voici un schéma global du processus décrit précedemment:<br>
         <img src="./assets/images/societeGenerale/shemaProcess.png" style="padding-left: 5px ;width:525px ;height:225px" alt="shemaExplicatif">
+    <div class="img-col"><b>Durant mon stage, j'ai pu redessiner en tout 7 chaînes sur DRAWIO</b></div>
+    <p>Après avoir fait des tests et étudié le processus, j’ai commencé à travailler sur la chaîne la plus longue à migrer nommée GRQ_ARRETE_SGBR. Cette chaîne avait la particularité d’avoir une partie sur CONTROL M et une partie déja migrée sur AIRFLOW. Il m’a donc fallu fusionner les parties separées tout en redessinant les parties monthly et daily de cette chaîne.<br>
+        Voici les différentes étapes detaillées avant de redessiner GRQ_ARRETE_SGBR:<br><br>
+        Tout d'abord le passage du fichier XML en Excel pour faciliter la lecture des données grâce à l'outil POWER QUERY intégré dans Excel:<br>
+
+    <div class="diplomas-container">
+        <div class="diploma">
+            <video width="550" height="300" controls autoplay loop muted>
+                <source src="./assets/images/societeGenerale/XML_file.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <p>Fichier XML</p>
+        </div>
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/fichier_EXCEL.png" alt="Excel_file">
+            <p>Fichier Excel</p>
+        </div>
+    </div><br><br>
+
+    <p>
+        Voici le PowerPoint de la chaîne SGBR, séparé en 5 slides: les 4 premières pour la partie monthly et la dernière pour la partie daily.
     </p>
+    <div class="diplomas-container">
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/SGBR_slidePPT1.png" alt="SGBR_slidePPT1">
+            <p>SGBR Slide 1 Monthly</p>
+        </div>
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/SGBR_slidePPT2.png" alt="SGBR_slidePPT2">
+            <p>SGBR Slide 2 Monthly</p>
+        </div>
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/SGBR_slidePPT3.png" alt="SGBR_slidePPT3">
+            <p>SGBR Slide 3 Monthly</p>
+        </div>
+    </div>
+    <div class="diplomas-container">
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/SGBR_slidePPT4.png" alt="SGBR_slidePPT4">
+            <p>SGBR Slide 4 Monthly</p>
+        </div>
+        <div class="diploma">
+            <img src="./assets/images/societeGenerale/SGBR_slidePPT5.png" alt="SGBR_slidePPT5">
+            <p>SGBR Daily</p>
+        </div>
+    </div>
     <p>
         <video width="1200" height="800" controls autoplay loop muted poster="./assets/images/societeGenerale/debutVideo_sgbr_drawio.png">
             <source src="./assets/images/societeGenerale/VideoSGBR_drawio.mp4" type="video/mp4">
