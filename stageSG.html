@@ -165,6 +165,18 @@
     .layout p {
         margin: 0; /* Supprime la marge par défaut du paragraphe */
     }
+    .parent-container {
+        display: flex;
+        justify-content: space-between; /* Espacement entre les éléments */
+        align-items: center;
+        flex-wrap: wrap; /* Permet aux éléments de se placer sur une nouvelle ligne si l'espace est insuffisant */
+    }
+    .layout2 {
+        margin: 15px; /* Ajoute une marge autour de chaque div */
+    }
+    .layout2 img {
+        display: block; /* S'assure que l'image ne déborde pas du conteneur */
+    }
 </style>
 </head>
 <body>
@@ -382,9 +394,26 @@
             <p>GRQ_ARRETE_GP</p>
         </div>
     </div><br><br>
-    <p>Durant ma mission, j'ai relevé plusieurs écarts entre les PowerPoint dessinés par GIE et le fichier XML issu de CONTROL M représentant la chaine "en réalité". Cela peut avoir lieu notamment suite à des erreurs de mise a jour. J'ai donc eu pour mission de les rapporter dans un fichier annexe laissé aux équipes à mon départ, et de notifier ces erreurs directement en notes sur DRAWIO aux endroits ou les écarts avec la réalité se trouvaient.<br><br>
+    <p>Durant ma mission, j'ai relevé plusieurs écarts entre les PowerPoint dessinés par GIE et le fichier XML issu de CONTROL M représentant la chaîne "en réalité". Cela peut avoir lieu notamment suite à des erreurs de mise a jour. J'ai donc eu pour mission de les rapporter dans un fichier annexe laissé aux équipes à mon départ, et de notifier ces erreurs directement en notes sur DRAWIO aux endroits ou les écarts avec la réalité se trouvaient.<br><br>
     J'ai également relevé les éléments dont j'avais besoin pour dessiner les chaînes qui n'étaient pas présents dans la librairie.<br><br>
-    La semaine avant mon départ a eu lieu un PI planning (évênement ayant lieu tous les 3 mois pour prévoir, organiser, et plannifier le travail de chaque équipe durant les mois avenirs), durant lequel les composants manquants que j'ai relevé ont été ajoutés à la liste des "user story" (fonctionnalité logicielle écrite du point de vue de l'utilisateur final) à développer.</p><br><br>
+    La semaine avant mon départ a eu lieu un PI planning (évênement ayant lieu tous les 3 mois pour prévoir, organiser, et plannifier le travail de chaque équipe durant les mois avenirs), durant lequel les composants manquants que j'ai relevé ont été ajoutés à la liste des "user story" (fonctionnalité logicielle écrite du point de vue de l'utilisateur final) à développer.
+    </p><br><br>
+    <p>J'ai enfin rendu mon travil accessible aux équipes du projet GARLIQ pour qu'il soit exploitable sur AIRFLOW après les futures dernières modifications. Pour cela j'ai converti mes chaînes DRAWIO en 2 fichiers .json, un pour les tâches et l'autre pour les dépendances. <br>
+    Cette étape se fait grâce aux fichers config.json et extract_tasks.py du projet Git GARLIQ-DAG-GENERATOR. <br>
+    L'algorithme Python permet de distinguer les tâches des chaînes pour créer les 2 fichiers .json distincts.<br>
+    Puis, les fichiers obtenus ont été versionnés sur Git.</p><br>
+    <div class="parent-container">
+        <div class="layout2">
+            <img src="./assets/images/societeGenerale/arborescence_dagGenerator.png" style="height: 400px" alt="GARLIQ-DAG-GENERATOR">
+            <p> Arborescence de GARLIQ-DAG-GENERATOR</p>
+        </div>
+        <div class="layout2">
+            <img src="./assets/images/societeGenerale/versioningGIT.png" style="width: 700px" alt="versioningGIT">
+            <p>Versionning Git</p>
+        </div>
+    </div>
+
+
 </div><!--fin mission-->
 
 
