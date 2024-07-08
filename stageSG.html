@@ -155,13 +155,15 @@
         margin-bottom: 20px;
         text-align: center;
     }
-    .enligne {
+    .layout {
         display: flex;
         align-items: center;
     }
-    .enligne video,
-    .enligne img {
-        margin-right: 150px; /* Ajouter de l'espace entre la vidéo et l'image */
+    .layout img {
+        margin-right: 20px; /* Espace entre l'image et le texte */
+    }
+    .layout p {
+        margin: 0; /* Supprime la marge par défaut du paragraphe */
     }
 </style>
 </head>
@@ -340,8 +342,10 @@
             <p>La partie sur AIRFLOW</p>
         </div>
     </div><br><br>
-
-
+    <div class="layout">
+        <img src="assets/images/societeGenerale/librairie.png" alt="Librairie de composants DRAWIO">
+        <p>Ceci est la librairie de composants DRAWIO crée par l'équipe GCC.GOT afin de permettre de dessiner les chaînes à migrer de CONTROL M à AIRFLOW tout en schématisant le plus simplement possible les tâches des chaînes.</p>
+    </div><br><br>
     <p>Grâce au fichier Excel, au PowerPoint et à la partie recupérée sur AIRFLOW, la chaîne GRQ_ARRETE_SGBR a pu être redessinée sur DRAWIO en concervant l'intégralité des données de chaque tâche et de chaque liaison, comme les paramètres ou les types d'éxecution. Voici le résultat:</p>
     <p>
         <video width="1200" height="700" controls autoplay loop muted poster="./assets/images/societeGenerale/debutVideo_sgbr_drawio.png">
