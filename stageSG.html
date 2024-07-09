@@ -171,12 +171,19 @@
         align-items: center;
         flex-wrap: wrap; /* Permet aux éléments de se placer sur une nouvelle ligne si l'espace est insuffisant */
     }
+
     .layout2 {
         margin: 15px; /* Ajoute une marge autour de chaque div */
+        flex: 1; /* Permet aux éléments de prendre une largeur flexible */
+        min-width: 300px; /* Définit une largeur minimale pour éviter que les éléments ne soient trop petits */
     }
-    .layout2 img {
-        display: block; /* S'assure que l'image ne déborde pas du conteneur */
+
+    .layout2 img, .layout2 video {
+        display: block; /* S'assure que l'image ou la vidéo ne déborde pas du conteneur */
+        max-width: 100%; /* S'assure que l'image ou la vidéo ne dépasse pas la largeur du conteneur */
+        height: auto; /* Maintient les proportions de l'image ou de la vidéo */
     }
+
 </style>
 </head>
 <body>
@@ -204,7 +211,7 @@
             <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class=" smooth-menu active"></li>
-                    <li class=" smooth-menu"><a href="#entreprise">ENTREPRISE</a></li>
+                    <li class=" smooth-menu"><a href="#entreprise&env">ENTREPRISE & ENVIRONNEMENT</a></li>
                     <li class="smooth-menu"><a href="#contexte">CONTEXTE</a></li>
                     <li class="smooth-menu"><a href="#mission">MA MISSION</a></li>
                     <li class="smooth-menu"><a href="#conclusion">CONCLUSION</a></li>
@@ -244,9 +251,10 @@
 </div>
 </div>
 
-<div style="margin: 20px;" class="portfolio-description" id="entreprise">
+<div style="margin: 20px;" class="portfolio-description" id="entreprise&env">
     <div class="titreStage" style="height: 40px ;margin-top: 120px" >ENTREPRISE </div>
-    <h2 style="text-decoration: underline">LIEU DU STAGE : 17 cours Valmy 92800 PUTEAUX / SOCIÉTÉ GÉNÉRALE PARIS LA DEFENSE </h2>
+    <h2 style="text-decoration: underline">LIEU DU STAGE : 17 cours Valmy 92800 PUTEAUX / SOCIÉTÉ GÉNÉRALE PARIS LA DEFENSE </h2><br><br><br>
+    <h2 style="text-decoration: underline">1)	L'entreprise et sa place dans le monde:</h2><br>
     <div class="parent-container">
         <div class="layout2">
             <video width="400" height="600" controls autoplay loop muted >
@@ -255,9 +263,83 @@
             </video>
         </div>
         <div class="layout2">
-
+            <p>
+                Etant une des plus grandes banques françaises et une des principales institutions financières en Europe, la Société Générale fut fondée en 1864. <br>
+                Elle offre une gamme complète de services bancaires et financiers, tant pour les particuliers que pour les entreprises.<br>
+                Avec une présence internationale, elle joue un rôle crucial dans le développement économique et financier mondial.
+                <br><br>
+            </p>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Présence mondiale</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard">Présente dans <b>66 pays</b>, elle permet de fournir des services bancaires adaptés aux besoins locaux tout en bénéficiant d'une portée mondiale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Réseau d'agences</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard">La banque dispose de plus de<b> 2 200 agences en France</b> et plus de <b>3 000 agences à l'international</b>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Clients</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard">Elle sert plus de <b>29 millions de clients</b> dans le monde entier, incluant des particuliers, des entreprises et des institutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Collaborateurs</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard">La banque emploie environ <b>133 000 collaborateurs</b> à travers le monde, d'où son importance sur la scène financière internationale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Résultats financiers</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard"> En 2023, elle a réalisé un produit net bancaire de plus de <b>25 milliards d'euros</b>, démontrant sa robustesse et sa capacité à générer des revenus substantiels malgré un environnement économique complexe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>Actifs sous gestion</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="pcard">La banque gère plus de <b>4 000 milliards d'euros d'actifs</b>, incluant les activités de banque de détail, de banque d'investissement et de gestion d'actifs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <p>
+                La Société Générale évolue constamment en réponse à des tendances et des défis liés à son environnement et à son secteur.
+            </p>
         </div>
     </div>
+    <br><br>
+    <h2 style="text-decoration: underline">2)	Les secteurs financiers et banquaires:</h2><br>
+
 </div>
 
 
