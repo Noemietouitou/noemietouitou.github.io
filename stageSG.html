@@ -184,6 +184,44 @@
         height: auto; /* Maintient les proportions de l'image ou de la vidéo */
     }
 
+    .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .icon-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin: 10px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .icon-item:hover {
+        transform: scale(1.05);
+    }
+
+    .icon-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .icon-item h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2em;
+    }
+
+    .icon-item p {
+        font-size: 0.9em;
+        color: #666;
+    }
 </style>
 </head>
 <body>
@@ -557,6 +595,30 @@
         </div>
     </div>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Icons</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="icon-container">
+        <div class="icon-item">
+            <img src="../portfolio/img/icons%20app%20stage/mailinblack-icon.png" alt="MAILINBLACK">
+            <h3>MAILINBLACK</h3>
+            <p>Mailinblack conçoit des solutions de cybersécurité simples et accessibles.</p>
+        </div>
+        <div class="icon-item">
+            <img src="../portfolio/img/icons%20app%20stage/stormshield.png" alt="STORMSHIELD">
+            <h3>STORMSHIELD</h3>
+            <p>Stormshield est un éditeur français de logiciels spécialisés en sécurité informatique.</p>
+        </div>
+    </div>
+    </body>
+    </html>
+
 
 </div><!--fin mission-->
 
@@ -564,6 +626,7 @@
 <div style="margin: 20px;" class="portfolio-description" id="conclusion">
     <div class="titreStage" style="height: 40px ;margin-top: 120px"> CONCLUSION </div>
     <h2 style="text-decoration: underline">conclusion</h2>
+
 </div>
 
 
