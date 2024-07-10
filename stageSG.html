@@ -197,8 +197,8 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         margin: 10px;
-        padding: 20px;
-        width: 200px;
+        padding: 10px;
+        width: 210px;
         text-align: center;
         transition: transform 0.2s;
     }
@@ -208,7 +208,7 @@
     }
 
     .icon-item img {
-        max-width: 100%;
+        max-width: 50%;
         height: auto;
         border-radius: 5px;
     }
@@ -390,7 +390,7 @@
         <p style="text-indent: 30px;">- Globalisation : Les grandes banques, comme la Société Générale, étendent leurs activités à l'échelle mondiale pour diversifier leurs revenus et leur base de clients. La globalisation a conduit à une plus grande intégration des marchés financiers, augmentant les opportunités mais aussi les risques systémiques.<br><br>
     </p>
     <br><br>
-    <h2 style="text-decoration: underline">3)	La SOCIÉTÉ GÉNÉRALE face à son environnement:</h2><br>
+    <h2 style="text-decoration: underline">3)	La SOCIÉTÉ GÉNÉRALE face à son environnement :</h2><br>
     <p>
         La Société Générale a évolué en réponse à ces tendances et défis, en passant par plusieurs étapes marquantes de son évolution.<br>
         Elle a tout d'abord répondu au besoin de la digitalisation : La banque a créé Société Générale Ventures, une branche dédiée aux fintechs et à l'innovation, investissant dans de nouvelles technologies pour améliorer ses services. Elle a développé des applications mobiles sophistiquées pour permettre aux clients de gérer leurs comptes et d'effectuer des transactions facilement.<br><br>
@@ -411,14 +411,14 @@
         La direction financière s’appuie sur l’application GARLIQ pour calculer les risques financiers portés par le bilan économique de la banque, afin d’éviter et de prévoir au mieux les risques de liquidité, de taux, ainsi que les déséquilibres potentiels.<br><br>
         Le bilan de la banque est vivant et évolue constamment, notamment suite aux enjeux sociaux, politiques comme les différentes élections, sanitaires comme la pandemie de la Covid connue en 2019, ...<br><br>
         L’application GARLIQ est donc utilisée pour réaliser des simulations d’anticipation avec des calculs effectués de manière récurrente. Ces differents calculs sont representés par des chaînes d’orchestration se trouvant sur CONTROL M et sur AIRFLOW, deux ordonnanceurs concurrents dont le sujet sera abordé par la suite.<br><br>
-        L’orchestration mise en place pour calculer les indicateurs des risques et des métriques est d’ailleurs à présenter a la Banque Centrale Europeenne (BCE).<br><br>
+        L’orchestration mise en place pour calculer les indicateurs des risques et des métriques est d’ailleurs à présenter à la Banque Centrale Europeenne (BCE).<br><br>
         Generalement, la plupart des calculs sont realisés à intervalle regulier d’ordre mensuel. Certaines simulations se doivent de suivre une orchestration hedomadaire. En tant de crise, comme par exemple suite à la déclaration de guerre en Ukraine, les élections législatives d’actualité ou encore la crise Covid19, la macro-activité se doit d’autant plus d’etre surveillée et les calculs sont administrés quotidiennement. En effet, ces évenements ont un impact considérable sur la société et sont à l’origine de potentiels grands changements économiques.<br><br>
     </p><br><br>
     <h2 style="text-decoration: underline">2)	L’évolution actuelle de GARLIQ: </h2><br>
     <p>Depuis 5 ans maintenant, c’est Samuel Grosman, mon maître de stage, qui est responsable de l’application GARLIQ, en constante évolution.<br><br>
         Les chaînes d’orchestration qui la constituent se trouvaient jusqu’à il y a peu de temps exclusivement sur l’ordonnanceur CONTROL M. Pour répondre à des besoins d’évolutions et de modernité en forte croissante, ces chaînes doivent etre progressivement migrées sur Airflow, un ordonnanceur concurrent.<br><br>
-        CONTROL M et AIRFLOW éffectuent le même travail avec pour but commun de faire enchaîner une succession de tâches prédéfinies suivants des éxigences données. Cependant leurs caracteristiques divergentes poussent la SOCIETE GENERALE à se tourner vers AIRFLOW.<br><br>
-        CONTROL M est un ordonnanceur payant et compatible aux infrastructures legacy, tandis que AIRFLOW est “open source” tout en étant en compatibilité avec les appels d’APIs (interfaces logicielles qui permettent de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités) et à l’approche de la transformation Cloud.<br><br>
+        CONTROL M et AIRFLOW éffectuent le même travail avec pour but commun de faire enchaîner une succession de tâches prédéfinies suivant des éxigences données. Cependant, leurs caracteristiques divergentes poussent la SOCIETE GENERALE à se tourner vers AIRFLOW.<br><br>
+        CONTROL M est un ordonnanceur payant et compatible aux infrastructures legacy, tandis que AIRFLOW est open-source tout en étant en compatibilité avec les appels d’APIs (interfaces logicielles qui permettent de « connecter » un logiciel ou un service à un autre logiciel ou service afin d'échanger des données et des fonctionnalités) et à l’approche de la transformation Cloud.<br><br>
         La migration des chaînes d’orchestration de CONTROL M vers AIRFLOW est donc un besoin actuel de l’application GARLIQ éxigé par la SOCIETE GENERALE afin de répondre à la modernisation et au changement des systemes utilisés.<br><br>
     </p>
 <br><br>
@@ -593,31 +593,63 @@
             <img src="./assets/images/societeGenerale/versioningGIT.png" style="width: 700px" alt="versioningGIT">
             <p>Versionning Git</p>
         </div>
-    </div>
+    </div><br><br><br>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Application Icons</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+
+    <!--icons des applis utilisées-->
+    <p>Voici les différentes interfaces et applications que j'ai utilisées tout au long de mon stage : </p>
     <div class="icon-container">
         <div class="icon-item">
-            <img src="../portfolio/img/icons%20app%20stage/mailinblack-icon.png" alt="MAILINBLACK">
-            <h3>MAILINBLACK</h3>
-            <p>Mailinblack conçoit des solutions de cybersécurité simples et accessibles.</p>
+            <img src="assets/images/societeGenerale/iconAppli/excel.png" alt="Excel">
+            <h3>EXCEL</h3>
+            <p>Logiciel de tableur développé par Microsoft permettant la création et la gestion de feuilles de calcul.</p>
         </div>
         <div class="icon-item">
-            <img src="../portfolio/img/icons%20app%20stage/stormshield.png" alt="STORMSHIELD">
-            <h3>STORMSHIELD</h3>
-            <p>Stormshield est un éditeur français de logiciels spécialisés en sécurité informatique.</p>
+            <img src="assets/images/societeGenerale/iconAppli/word.png" alt="Word">
+            <h3>WORD</h3>
+            <p>Traitement de texte développé par Microsoft utilisé pour créer, éditer et formater des documents.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/powerPoint.png" alt="PPT">
+            <h3>POWERPOINT</h3>
+            <p>Logiciel de présentation développé par Microsoft pour créer des diapositives et des présentations visuelles.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/vsCode.png" alt="VScode">
+            <h3>VisualStudio CODE</h3>
+            <p>Editeur de code source développé par Microsoft, connu pour ses fonctionnalités de débogage et de support des extensions.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/drawio.png" alt="DrawIO">
+            <h3>DRAWIO</h3>
+            <p>Outil disponible en open-source pour créer des diagrammes de flux, des organigrammes et d'autres types de diagrammes.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/github.png" alt="Github">
+            <h3>GITHUB</h3>
+            <p>Plateforme de développement collaboratif et de gestion de code source utilisant Git pour le contrôle de version.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/controleM.png" alt="ControlM">
+            <h3>CONTROL M </h3>
+            <p>Ordonnanceur, logiciel de gestion des flux de travail et d'automatisation des opérations informatiques, développé par BMC Software.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/airflow.png" alt="Airflow">
+            <h3>AIRFLOW</h3>
+            <p>Ordonnanceur, plateforme d'orchestration de flux de travail open-source C par Apache, utilisée pour planifier et surveiller des workflows.</p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/agiletools.png" alt="AgileTools">
+            <h3>Agile Tools</h3>
+            <p>Plateforme d'outils qui facilitent la gestion de projets Agile, aidant les équipes à planifier, suivre et gérer le développement de logiciels, <b>dont un des développeurs est Laurent Dlus, l'Agile Master. </b></p>
+        </div>
+        <div class="icon-item">
+            <img src="assets/images/societeGenerale/iconAppli/jiraSoftware.png" alt="JiraSoftware">
+            <h3>JIRA SOFTWARE</h3>
+            <p>Outil de gestion de projets et de suivi des bugs développé par Atlassian, largement utilisé pour les méthodologies Agile.</p>
         </div>
     </div>
-    </body>
-    </html>
 
 
 </div><!--fin mission-->
