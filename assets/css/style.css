@@ -248,15 +248,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
-    font-size:18px;
+    font-size:15px;
     color: #3c4258;
     text-transform: initial;
     line-height: 1.8;
 }
 .single-about-txt p {
     font-size: 16px;
-    color: #999fb3;
-    padding: 35px 0 43px;
+    color: #5c6273;
+    padding: 35px 0 43px ;
     border-bottom: 1px solid #999fb3;
 }
 .single-about-add-info {
@@ -272,7 +272,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 .single-about-img {
     position: relative;
-    box-shadow: 0 5px 20px rgba(14, 25, 80, .30);
+    box-shadow: 0 5px 20px rgba(38, 44, 75, 0.89);
     width: 556px; /* Largeur de l'image */
     height: 592px; /* Hauteur de l'image */
 }
@@ -974,8 +974,8 @@ body {
 
 .flip-carte {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 555px;
+    height: 450px;
     perspective: 1000px;
 }
 
@@ -983,7 +983,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: match-parent;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -1005,12 +1005,12 @@ body {
 }
 
 .flip-carte-front {
-    background-color: #bbb;
-    color: black;
+    background-color: #c8bad7;
+    color: #030303;
 }
 
 .flip-carte-back {
-    background-color: #e4a8f5;
+    background-color: #efddf5;
     color: white;
     transform: rotateY(180deg);
 }
