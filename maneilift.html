@@ -154,6 +154,54 @@
         margin-bottom: 20px;
         text-align: center;
         }
+
+        /* Grid container for the diagram */
+        .diagram-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .diagram-item {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .diagram-item h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .diagram-item p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .diagram-item i {
+            font-size: 24px;
+            color: #b555f3;
+            margin-bottom: 15px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
         </style>
 
     </head>
@@ -224,5 +272,74 @@
     </div>
 
 
+    <div class="container">
+        <div class="diagram-container">
+            <div class="diagram-item">
+                <i class="fa fa-building"></i>
+                <h3>Nom</h3>
+                <p>MANEI LIFT</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-briefcase"></i>
+                <h3>Forme juridique</h3>
+                <p>Société par actions simplifiée (SAS)</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-euro"></i>
+                <h3>Capital</h3>
+                <p>55,114 millions d’€ (2022)</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-users"></i>
+                <h3>Effectif</h3>
+                <p>1 170 employés (2022)</p>
+            </div>
+            <div class="diagram-item full-width">
+                <i class="fa fa-map-marker"></i>
+                <h3>Siège social</h3>
+                <p>Domicilié au 10/12 Bd Louise Michel Bat B2, 92230 Gennevilliers</p>
+            </div>
+            <div class="diagram-item full-width">
+                <i class="fa fa-user-tie"></i>
+                <h3>Direction</h3>
+                <p>Pierre Dupont (directeur général) et Jean Martin (président)</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-cogs"></i>
+                <h3>Domaine d'activité</h3>
+                <p>Spécialisée dans la maintenance d'ascenseurs et appareils de levage.</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-leaf"></i>
+                <h3>Externalités</h3>
+                <p>Positives et négatives</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-recycle"></i>
+                <h3>RSE</h3>
+                <p>Responsabilité sociétale de l'entreprise</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-lock"></i>
+                <h3>RGPD</h3>
+                <p>Conformité avec le Règlement Général sur la Protection des Données</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-bullseye"></i>
+                <h3>Orientations stratégiques</h3>
+                <p>Objectifs et stratégies de l'entreprise</p>
+            </div>
+            <div class="diagram-item">
+                <i class="fa fa-chart-line"></i>
+                <h3>SWOT</h3>
+                <p>Forces, Faiblesses, Opportunités et Menaces</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
 </body>
 </html>
