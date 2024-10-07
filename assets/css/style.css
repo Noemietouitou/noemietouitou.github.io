@@ -340,7 +340,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 
 /*.education-horizontal-timeline*/
-.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
+.education-horizontal-timeline .col-sm-4 {padding:0 1px;}
 
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
@@ -613,7 +613,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .isotope .item {
     position:relative;
     overflow:hidden;
-    margin-bottom: 30px;
+    margin-bottom: 7px;
 }
 /*.item img*/
 .isotope .item img{
