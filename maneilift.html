@@ -154,6 +154,60 @@
         margin-bottom: 20px;
         text-align: center;
         }
+
+        .friseManeilift {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            position: relative;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .frise-item {
+            padding: 10px 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .frise-item::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #e81b08;
+            border-radius: 50%;
+            left: -25px;
+            top: 20px;
+        }
+
+        .frise-content {
+            padding: 10px 20px;
+            background-color: #eee;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .frise-content h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .frise-content p {
+            margin: 0;
+            color: #555;
+        }
+
+        .friseManeilift::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #030303;
+            left: 20px;
+            top: 0;
+        }
         
         </style>
 
@@ -200,29 +254,57 @@
 
     <div class="container" style="margin-top: 120px" >
         <div class="titreStage" style="height: 80px "> ALTERNANCE AU SEIN DE MANEILIFT - VINCI<br> SEPTEMBRE 2024 - AOUT 2025 </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="portfolio-info" >
-                    <h2><u>Informations sur l'entreprise :</u></h2><br>
-                    <ul>
-                        <li><strong>Nom :</strong>MANEI LIFT</li>
-                        <li><strong>Forme juridique : </strong>Société par actions simplifiée (SAS)</li>
-                        <li><strong>Capital :</strong>55,114 millions d’€ (2022)</li>
-                        <li><strong>Chiffre d'affaires :</strong>+8,8% 28,06 millions d’€ (2022)</li>
-                        <li><strong>Effectif :</strong>1 170 employés (2022)</li>
-                        <li><strong>Siège social :</strong> Domicilié au 10/12 Bd Louise Michel Bat B2, 92230 Gennevilliers</li>
-                        <li><strong>Direction :</strong> Pierre Dupont (directeur général) et Jean Martin (président)</li>
-                        <li><strong>Domaine d'activité :</strong> Spécialisée dans la maintenance d'ascenseurs et appareils de levage.</li>
-                        <li><strong>Site internet :</strong><i class="bi bi-globe2"></i> <a href="https://www.manei-lift.fr/" target="_blank">www.manei-lift.fr</a></li>
-                    </ul>
+
+        <center>
+                <img src="assets/images/maneiLift_Vinci/presetation.png" style="width: 700px;height: 500px" alt="Societe Generale">
+        </center><br><br>
+    </div>
+
+    <div style="margin: 20px;" class="portfolio-description" id="entreprise&env">
+        <div class="titreStage" style="height: 40px ;margin-top: 120px" >ENTREPRISE & ENVIRONNEMENT</div>
+        <h2 style="text-decoration: underline">LIEU DE L'ALTERNANCE : 10/12 BOULEVARD LOUISE MICHEL 92230 GENNEVILLIER</h2><br><br><br>
+        <h2 style="text-decoration: underline ; color: #e01526">1)	Historique de l'entreprise :</h2><br>
+
+        <!-- historique-->
+        <div class="friseManeilift">
+            <div class="frise-item">
+                <div class="frise-content">
+                    <h3>2005</h3>
+                    <p>Fondation de Manei Lift, filiale de Vinci Energies.</p>
                 </div>
             </div>
-
-            <div class="col-lg-6 img-col">
-                <img src="assets/images/maneiLift_Vinci/logo.png" class="responsive-img" alt="Societe Generale">
+            <div class="frise-item">
+                <div class="frise-content">
+                    <p>Développement en maîtrisant toutes les phases de la vie de votre ascenseur, de l’installation à la maintenance préventive et curative en passant par la modernisation ou le remplacement de l’ascenseur.</p>
+                </div>
+            </div>
+            <div class="frise-item">
+                <div class="frise-content">
+                    <h3>2024</h3>
+                    <p>Des clients confiants, années après années.</p>
+                </div>
             </div>
         </div>
+        <h2 style="text-decoration: underline ; color: #e01526">1)	SWOT & EXTERNALITES:</h2><br>
+        <img src="assets/images/maneiLift_Vinci/swot.png" style="height: 355px;width: 560px" alt="swot">
+        <img src="assets/images/maneiLift_Vinci/externalites.png" style="height: 355px;width: 560px" alt="externalites">
     </div>
+
+    <div style="margin: 20px;" class="portfolio-description" id="contexte">
+        <div class="titreStage" style="height: 40px ;margin-top: 120px" >CONTEXTE</div>
+        <h2 style="text-decoration: underline ; color: #e01526">1)	Un domaine en constante expansion :</h2><br>
+    </div>
+
+    <div style="margin: 20px;" class="portfolio-description" id="mission">
+        <div class="titreStage" style="height: 40px ;margin-top: 120px" >MES MISSIONS</div>
+    </div>
+
+
+    <div style="margin: 20px;" class="portfolio-description" id="conclusion">
+        <div class="titreStage" style="height: 40px ;margin-top: 120px" >CONCLUSION</div>
+    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

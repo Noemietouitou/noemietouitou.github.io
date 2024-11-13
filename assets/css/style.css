@@ -296,10 +296,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 556px; /* Largeur de la bannière égale à celle de l'image */
+    width: 455px; /* Largeur de la bannière égale à celle de l'image */
     height: 90px;
     background: #1f2c6c;
-    margin-top: 20px; /* Espace entre l'image et la bannière */
+    margin-top: 30px; /* Espace entre l'image et la bannière */
 }
 
 .about-list-icon ul {
