@@ -208,7 +208,76 @@
             left: 20px;
             top: 0;
         }
-        
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card_mission {
+            font-size: large;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column; /* Disposition du texte verticalement */
+            justify-content: center;
+            align-items: center;
+            background-color: #c8c4ea;
+            border: 2px solid #030303;
+            box-shadow: 0 4px 8px rgb(61, 61, 61);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card_mission p {
+            margin: 0;
+        }
+
+        .card_mission b {
+            font-weight: bold;
+        }
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .icon-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 210px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .icon-item:hover {
+            transform: scale(1.05);
+        }
+
+        .icon-item img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .icon-item h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .icon-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
         </style>
 
     </head>
@@ -256,7 +325,7 @@
         <div class="titreStage" style="height: 80px "> ALTERNANCE AU SEIN DE MANEILIFT - VINCI<br> SEPTEMBRE 2024 - AOUT 2025 </div>
 
         <center>
-                <img src="assets/images/maneiLift_Vinci/presetation.png" style="width: 700px;height: 500px" alt="Societe Generale">
+                <img src="assets/images/maneiLift_Vinci/presetation.png" style="width: 855px;height: 600px" alt="ManeiLift">
         </center><br><br>
     </div>
 
@@ -285,23 +354,83 @@
                 </div>
             </div>
         </div>
-        <h2 style="text-decoration: underline ; color: #e01526">1)	SWOT & EXTERNALITES:</h2><br>
+        <h2 style="text-decoration: underline ; color: #e01526">1)	SWOT & EXTERNALITES:</h2><br><center>
         <img src="assets/images/maneiLift_Vinci/swot.png" style="height: 355px;width: 560px" alt="swot">
         <img src="assets/images/maneiLift_Vinci/externalites.png" style="height: 355px;width: 560px" alt="externalites">
+    </center>
     </div>
 
     <div style="margin: 20px;" class="portfolio-description" id="contexte">
         <div class="titreStage" style="height: 40px ;margin-top: 120px" >CONTEXTE</div>
         <h2 style="text-decoration: underline ; color: #e01526">1)	Un domaine en constante expansion :</h2><br>
+
+        <h2 style="text-decoration: underline ; color: #e01526">2)	Ma place dans l'entreprise :</h2><br>
+        <p> Voici les différents services sein de la société Manei Lift: </p>
     </div>
 
     <div style="margin: 20px;" class="portfolio-description" id="mission">
         <div class="titreStage" style="height: 40px ;margin-top: 120px" >MES MISSIONS</div>
+
+        <div class="cards-container">
+            <div class="card_mission">
+                <p><b><u>GESTIONS ET ANALYSES DE DONNEES:</u></b></p><br>
+                <p> - Fiches de bilans trimestrielles pour des clients depuis la base de données. <br>
+                    - Entrées de données et extraction pour les différents services </p>
+            </div>
+            <div class="card_mission">
+                <p><b><u>MISE EN PLACE DE PROCEDURES: </u></b></p><br>
+                <p> - Formulaire de commande de pieces pour les techniciens.<br>
+                    - Utilisation de flux avec POWER AUTOMATE et FORMS.</p>
+            </div>
+            <div class="card_mission" style="width: 900px">
+                <p><b><u>PREVENTION CYBERSECURITE & UTILISATION DU CLOUD: </u></b></p><br>
+                <img src="assets/images/maneiLift_Vinci/passports.png" alt="cloudy" style="height: 280px;width: 800px">
+            </div>
+        </div>
+
+        <!--icons des applis utilisées-->
+        <div class="icon-container">
+            <div class="icon-item">
+                <img src="assets/images/societeGenerale/iconAppli/excel.png" alt="Excel">
+                <h3>EXCEL</h3>
+                <p>Logiciel de tableur développé par Microsoft permettant la création et la gestion de feuilles de calcul.</p>
+            </div>
+            <div class="icon-item">
+                <img src="assets/images/societeGenerale/iconAppli/word.png" alt="Word">
+                <h3>WORD</h3>
+                <p>Traitement de texte développé par Microsoft utilisé pour créer, éditer et formater des documents.</p>
+            </div>
+            <div class="icon-item">
+                <img src="assets/images/societeGenerale/iconAppli/powerPoint.png" alt="PPT">
+                <h3>POWERPOINT</h3>
+                <p>Logiciel de présentation développé par Microsoft pour créer des diapositives et des présentations visuelles.</p>
+            </div>
+            <div class="icon-item">
+                <img src="assets/images/societeGenerale/iconAppli/powerPoint.png" alt="PPT">
+                <h3>POWER AUTOMATE</h3>
+                <p>Logiciel de présentation développé par Microsoft pour créer des diapositives et des présentations visuelles.</p>
+            </div>
+            <div class="icon-item">
+                <img src="assets/images/societeGenerale/iconAppli/powerPoint.png" alt="PPT">
+                <h3>FORMS</h3>
+                <p>Logiciel de présentation développé par Microsoft pour créer des diapositives et des présentations visuelles.</p>
+            </div>
+        </div>
+
     </div>
 
 
     <div style="margin: 20px;" class="portfolio-description" id="conclusion">
         <div class="titreStage" style="height: 40px ;margin-top: 120px" >CONCLUSION</div>
+        <br>
+        <p>
+            Mon année d'alternance au sein de l'entreprise <b>MANEILIFT</b>, durant ma deuxième année de BTS SIO, a été enrichissante pour ma formation et mon développement professionnel. J'ai eu l'opportunité d'acquérir <b>de nombreuses compétences pratiques</b> tout en mettant en application les connaissances théoriques acquises parallèlement durant mes cours.<br><br>
+            J'ai eu l'opportunité de travailler en tant qu'alternante méthode et data analyst au sein de l'équipe informatique.<br><br>
+            Ainsi, j'ai pu approfondir mes connaissances en manipulant les différentes <b>interfaces et applications</b>, notamment en manipulant constamment la <b>base de données</b> et en mettant en place des <b>procédures</b> afin de répondre aux besoins de l'entreprise et des clients.<br><br>
+            En conclusion, le choix d'alternance au sein de l'entreprise MANEILIFT a été une expérience extrêmement positive et enrichissante. J'ai pu mettre en pratique mes connaissances théoriques, développer de nouvelles compétences en développement et contribuer à la vie de l'entreprise.
+            J’ai découvert un grand intérêt quant au rapport de confiance et la communication établi avec les clients. Cette année m'a permis de m'adapter au monde du travail au quotidien et je suis reconnaissante envers MANEILIFT pour cette opportunité.
+        </p>
+        <br><br>
     </div>
 
 
