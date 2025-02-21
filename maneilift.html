@@ -61,47 +61,6 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        .row {
-        display: flex;
-        flex-wrap: wrap;
-        }
-
-        .col-lg-4 {
-        flex: 0 0 50%;
-        padding: 15px;
-        }
-
-        .col-lg-6 {
-        flex: 0 0 50%;
-        padding: 15px;
-        }
-
-        .responsive-img {
-        width: 67%;
-        height: auto;
-        border-radius: 5px;
-        margin-right: 55px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-
-        .img-col {
-        flex: 0 0 50%; /* Ensure both columns take up 50% width */
-        padding: 15px 30px; /* Adjust padding as needed */
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start; /* Align the image to the top of its container */
-        }
-
-        .portfolio-info {
-        background-color: #f1f1f1;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        font-size: small;
-        width: 600px; /* Fixed width for the portfolio info */
-        margin-right: auto; /* Align to the left */
-        }
-
         .portfolio-info h2 {
         margin-top: 0;
         }
@@ -137,9 +96,6 @@
         text-align: justify;
         }
 
-        .alinea-text {
-        text-indent: 2em;
-        }
 
         .titreStage {
         height: 80px;
@@ -219,7 +175,7 @@
         .card_mission {
             font-size: large;
             width: 500px;
-            height: 500px;
+            height: 300px;
             display: flex;
             flex-direction: column; /* Disposition du texte verticalement */
             justify-content: center;
@@ -393,12 +349,17 @@
         <div class="titreStage" style="height: 40px ;margin-top: 120px" >MES MISSIONS</div>
 
         <div class="cards-container">
-            <div class="card_mission">
+            <div class="card_mission" style="width: 300px">
                 <p><b><u>GESTIONS ET ANALYSES DE DONNEES:</u></b></p><br>
                 <p> - Fiches de bilans trimestrielles pour des clients depuis la base de données. <br>
                     - Entrées de données et extraction pour les différents services </p>
             </div>
-            <div class="card_mission">
+            <div class="card_mission" style="width: 300px">
+                <p><b><u>GESTIONS DES CARTES SIM :</u></b></p><br>
+                <p> - Activations et désactivations des cartes SIM via la plateforme MATOOMA. <br>
+                    - Redistribution des SIM aux techniciens pour l'installation dans les ascenceurs.</p>
+            </div>
+            <div class="card_mission" style="width: 300px">
                 <p><b><u>MISE EN PLACE DE PROCEDURES: </u></b></p><br>
                 <p> - Formulaire de commande de pieces pour les techniciens.<br>
                     - Utilisation de flux avec POWER AUTOMATE et FORMS.</p>
@@ -425,9 +386,19 @@
                 <p>Solution informatique dédiée à la gestion de la maintenance, des équipements et des interventions techniques, notamment dans les secteurs des ascenseurs et du matériel d'élévation.</p>
             </div>
             <div class="icon-item">
+                <img src="assets/images/maneiLift_Vinci/matooma.png" alt="PA">
+                <h3>M2M MANAGER MATOOMA</h3>
+                <p>M2M Manager est un outil de Matooma permettant de gérer et superviser les cartes SIM IoT/M2M utilisées dans des objets connectés. Il permet d’automatiser le suivi de la consommation, l’activation/désactivation des SIM et l’optimisation des coûts.</p>
+            </div>
+            <div class="icon-item">
                 <img src="assets/images/societeGenerale/iconAppli/excel.png" alt="Excel">
                 <h3>EXCEL</h3>
                 <p>Logiciel de tableur développé par Microsoft permettant la création et la gestion de feuilles de calcul.</p>
+            </div>
+            <div class="icon-item">
+                <img src="assets/images/maneiLift_Vinci/outlook.png" alt="PA">
+                <h3>OUTLOOK</h3>
+                <p>Outlook est un outil de Microsoft permettant de gérer les e-mails, les calendriers, les contacts et les tâches de manière centralisée. Il facilite la communication et l’organisation au sein d’une entreprise.</p>
             </div>
             <div class="icon-item">
                 <img src="assets/images/societeGenerale/iconAppli/word.png" alt="Word">
@@ -440,6 +411,11 @@
                 <p>Logiciel de présentation développé par Microsoft pour créer des diapositives et des présentations visuelles.</p>
             </div>
             <div class="icon-item">
+                <img src="assets/images/maneiLift_Vinci/Power_bi.png" alt="PA">
+                <h3>POWER BI</h3>
+                <p>Outil de Microsoft permettant d'automatiser l'analyse et la visualisation des données en connectant différentes sources et en créant des rapports interactifs sans nécessiter de compétences avancées en programmation.</p>
+            </div>
+            <div class="icon-item">
                 <img src="assets/images/maneiLift_Vinci/power_automate.png" alt="PA">
                 <h3>POWER AUTOMATE</h3>
                 <p>Outil de Microsoft permettant d'automatiser des workflows et des tâches répétitives entre différentes applications et services sans nécessiter de code.</p>
@@ -450,9 +426,9 @@
                 <p>Outil permettant de créer des enquêtes, des quiz et des formulaires en ligne, facilitant la collecte de données et la collaboration.</p>
             </div>
             <div class="icon-item">
-                <img src="assets/images/maneiLift_Vinci/Power_bi.png" alt="PA">
-                <h3>POWER BI</h3>
-                <p>Outil de Microsoft permettant d'automatiser l'analyse et la visualisation des données en connectant différentes sources et en créant des rapports interactifs sans nécessiter de compétences avancées en programmation.</p>
+                <img src="assets/images/maneiLift_Vinci/sharepoint.png" alt="PA">
+                <h3>SHAREPOINT</h3>
+                <p>SharePoint est un outil de Microsoft permettant de centraliser, organiser et partager des données au sein d'une organisation. Il facilite la collaboration, la gestion documentaire et l'automatisation des processus.</p>
             </div>
         </div>
 
