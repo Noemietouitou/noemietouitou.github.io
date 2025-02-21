@@ -30,5 +30,4 @@
 }
 
 .flaticon-github-logo:before { content: "\f104"; }
-.flaticon-linkedin:before { content: "\e800"; } /* Example Unicode for LinkedIn icon in Flaticon */
-.flaticon-whatsapp:before { content: "\e801"; } /* Example Unicode for WhatsApp icon in Flaticon */
+.flaticon-linkedin:before { content: "\e800"; }
